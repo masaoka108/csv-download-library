@@ -2,7 +2,7 @@
 
 class CsvCreate {
 
-    public static function getCsvData($data, $csvHeader, $fileName)
+    public static function getCsvData($data, $csvHeader, $fileName, $encoding)
     {
 
          // CSV出力
@@ -19,7 +19,7 @@ class CsvCreate {
          }
          rewind($stream);
          $csv = str_replace(PHP_EOL, "\r\n", stream_get_contents($stream));
-         $csv = mb_convert_encoding($csv, 'SJIS-win', 'UTF-8');
+         $csv = mb_convert_encoding($csv, $encoding, 'UTF-8');
          $headers = array(
              'Content-Type' => 'text/csv',
              'Content-Disposition' => 'attachment; filename="'.$fileName.'"',
