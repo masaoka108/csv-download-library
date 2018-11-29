@@ -11,7 +11,7 @@ class CsvCreate {
          foreach ($data as $user) {
 
              if (!is_array($user)) {
-                 // StdClassとなっているのでArryaに変換
+                 // StdClassとなっている場合はArryaに変換
                  $user = (array) $user;
              }
 

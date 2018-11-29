@@ -1,6 +1,5 @@
 # csv-download-library
 
-[![Latest Version on Packagist][ico-version]][link-packagist]
 [![Total downloads][ico-downloads]][link-packagist]
 [![Software License][ico-license]](LICENSE.md)
 
@@ -10,7 +9,7 @@ CSV file download library for Laravel.
 Via Composer
 
 ``` bash
-$ composer require okamok/okamok/csv-download-library
+$ composer require okamok/csv-download-library
 ```
 
 ## Usage
@@ -32,8 +31,8 @@ class TopController extends Controller
         //sample header
         $csvHeader = ['title1','title2','title3'];
 
-        //sample data
-        $data = [['row1-1', 'row1-2', 'row1-3'], ['row2-1', 'row2-2', 'row2-3']];
+        //sample data(All users data)
+        $data = User::get()->toArray();
 
         //sample file name
         $fileName = 'test.csv';
