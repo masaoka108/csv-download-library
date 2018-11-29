@@ -8,6 +8,7 @@
             "email": "info@insight.hiliberate.biz"
         }
     ],
+    "minimum-stability": "1.0.0",
     "require": {
         "php": "^7.0",
         "laravel/framework": "^5.0.0"
