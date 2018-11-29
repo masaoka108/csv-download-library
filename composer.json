@@ -1,6 +1,7 @@
 {
     "name": "okamok/csv-download-library",
     "description": "For Laravel CSV file download",
+    "license": "MIT",
     "authors": [
         {
             "name": "okamok",
