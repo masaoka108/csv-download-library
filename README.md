@@ -3,7 +3,7 @@
 [![Total downloads][ico-downloads]][link-packagist]
 [![Software License][ico-license]](LICENSE.md)
 
-CSV file download library for Laravel.
+CSV file download library.
 
 ## Installation
 Via Composer
@@ -13,7 +13,7 @@ $ composer require okamok/csv-download-library
 ```
 
 ## Usage
-This is sample controller
+This is sample controller for Laravel
 
 ``` php
 <?php
@@ -33,6 +33,8 @@ class TopController extends Controller
 
         //sample data(All users data)
         $data = User::get()->toArray();
+        //you also can use Array for data
+        //$data = [['aaa','bbb','ccc'], ['ddd','eeee','ffff']];
 
         //sample file name
         $fileName = 'test.csv';
