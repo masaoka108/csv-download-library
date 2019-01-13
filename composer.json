@@ -17,13 +17,5 @@
        "psr-4": {
            "Okamok\\CsvDownloadLibrary\\": "src/"
        }
-   },
-   "extra": {
-       "laravel": {
-           "providers": [
-               "Okamok\\CsvDownloadLibrary\\CsvDownloadLibraryServiceProvider"
-           ]
-       }
    }
-
 }
